@@ -22,17 +22,17 @@
     </style>
 
     <?
-        $Name = "Павел";
-        $Entity = "Человек";
-        $Description = "Программист которого боится ЛЕГАСИ код";
+    $Name = "Павел";
+    $Entity = "Человек";
+    $Description = "Программист которого боится ЛЕГАСИ код";
 
-        $Weapons = "Модная клавиатура";
-        $Endurance = "45";
-        $Power = "30";
-        $Dexterity = "100";
+    $Weapons = "Модная клавиатура";
+    $Endurance = "45";
+    $Power = "30";
+    $Dexterity = "100";
 
-        $Total = $Endurance + $Power + $Dexterity;
-        $On_average = $Total/3;
+    $Total = $Endurance + $Power + $Dexterity;
+    $On_average = $Total/3;
 
     ?>
 
