@@ -4,14 +4,9 @@ include "other/day3.php"?>
 <h1>Домашняя работа №3</h1>
 <hr>
 <div class="post_body">
-    <pre>
-    <?
-    print_r($hero);
-
-
-
-    ?>
-    </pre>
+<!--    <pre>-->
+<!--    --><?//print_r($hero);?>
+<!--    </pre>-->
 
     <? for($i=0; $i < count($hero); $i++):?>
 
@@ -54,49 +49,46 @@ include "other/day3.php"?>
         <br><br>
     <?php endfor;?>
 
-        <?$play = array('jump', 'run', 'fight', 'result');?>
-            <p>Прыжки:</p>
-        <?for($i = 1; $i < 6; $i++):?>
-            <?for ($j = 0; $j < count($hero); $j++):?>
-                <?$play['jump'][$hero[$j]['Name']] += (int)($hero[$j]['Dexterity']/$i)?>
-            <?php endfor;?>
+    <?$play = array('jump', 'run', 'fight', 'result');?>
+        <p>Прыжки:</p>
+    <?for($i = 1; $i < 6; $i++):?>
+        <?for ($j = 0; $j < count($hero); $j++):?>
+            <?$play['jump'][$hero[$j]['Name']] += (int)($hero[$j]['Dexterity']/$i)?>
         <?php endfor;?>
+    <?php endfor;?>
 
-        <?for ($j = 0; $j < count($hero); $j++ ):?>
-            <br> <b><?=$hero[$j]['Name']?></b> =>  <i><?=$play['jump'][$hero[$j]['Name']]?></i>
-        <?php endfor; ?> <br><br>
+    <?for ($j = 0; $j < count($hero); $j++ ):?>
+        <br> <b><?=$hero[$j]['Name']?></b> =>  <i><?=$play['jump'][$hero[$j]['Name']]?></i>
+    <?php endfor; ?> <br><br>
 
-        <p>Бег:</p>
-        <?for($i = 1; $i < 6; $i++):?>
-            <?for ($j = 0; $j < count($hero); $j++):?>
-                <?$play['run'][$hero[$j]['Name']] += (int)($hero[$j]['Endurance']/$i)?>
-            <?php endfor;?>
+    <p>Бег:</p>
+    <?for($i = 1; $i < 6; $i++):?>
+        <?for ($j = 0; $j < count($hero); $j++):?>
+            <?$play['run'][$hero[$j]['Name']] += (int)($hero[$j]['Endurance']/$i)?>
         <?php endfor;?>
+    <?php endfor;?>
 
-        <?for ($j = 0; $j < count($hero); $j++ ):?>
-            <br> <b><?=$hero[$j]['Name']?></b> =>  <i><?=$play['run'][$hero[$j]['Name']]?></i>
-        <?php endfor; ?> <br><br>
+    <?for ($j = 0; $j < count($hero); $j++ ):?>
+        <br> <b><?=$hero[$j]['Name']?></b> =>  <i><?=$play['run'][$hero[$j]['Name']]?></i>
+    <?php endfor; ?> <br><br>
 
-        <p>Борьба:</p>
-        <?for($i = 1; $i < 6; $i++):?>
-            <?for ($j = 0; $j < count($hero); $j++):?>
-                <?$play['fight'][$hero[$j]['Name']] += (int)($hero[$j]['Power']/$i)?>
-            <?php endfor;?>
+    <p>Борьба:</p>
+    <?for($i = 1; $i < 6; $i++):?>
+        <?for ($j = 0; $j < count($hero); $j++):?>
+            <?$play['fight'][$hero[$j]['Name']] += (int)($hero[$j]['Power']/$i)?>
         <?php endfor;?>
+    <?php endfor;?>
 
-        <?for ($j = 0; $j < count($hero); $j++ ):?>
-            <br> <b><?=$hero[$j]['Name']?></b> => <i><?=$play['fight'][$hero[$j]['Name']]?></i>
-        <?php endfor; ?>
+    <?for ($j = 0; $j < count($hero); $j++ ):?>
+        <br> <b><?=$hero[$j]['Name']?></b> => <i><?=$play['fight'][$hero[$j]['Name']]?></i>
+    <?php endfor; ?> <br> <br>
 
-        <? for ($r = 0; $r < count($hero); $r++):?>
-            <?=$hero[$r]['Name']?> = <?= $play['fight'][$hero[$r]]?>
-            <?= $play['result'][$hero[$j]['Name']] = $play['run'][$hero[$j]['Name']]+$play['jump'][$hero[$j]['Name']]+$play['fight'][$hero[$j]['Name']]?>
-        <?php endfor;?>
+    <br><br><p>Всего: </p>
 
-        <br><br><p>Всего: </p>
-        <?foreach ($play as $Name => $res):?>
-            <?=$Name?> <br> <?=$res?>
-        <?php endforeach; ?>
+    <?for($j = 0; $j < count($hero); $j++):?>
+        <br><b><?=$hero[$j]["Name"]?></b>  =>
+        <?=$play['result'][$hero[$j]["Name"]] = $play['run'][$hero[$j]["Name"]]+$play['jump'][$hero[$j]["Name"]]+$play['fight'][$hero[$j]["Name"]]?>
+    <?endfor;?>
 
 
 
@@ -111,3 +103,4 @@ include "other/day3.php"?>
     прыжки -> ловкости - Dexterity
 -->
 
+<!--Не люблю когда все в одном месте-->
