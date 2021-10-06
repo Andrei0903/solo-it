@@ -127,10 +127,10 @@
 
     <br><br>
     <br><b>Всего:</b><br><br>
-    <?foreach($play["Result"] as $Name => $Res):?>
-      <?=$Name?>: <?=$Res?><br>
 
-    <?endforeach;?>
+      <?foreach($play["Result"] as $Name => $Res):?>
+        <?=$Name?>: <?=$Res?><br>
+      <?endforeach;?>
 
   </div>
 

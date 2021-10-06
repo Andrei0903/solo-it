@@ -180,7 +180,7 @@ include $_SERVER['DOCUMENT_ROOT']."/works/other/day2.php";?>
         </tr>
         <tr>
             <td><?=$Weapun3?></td>
-            <td style="background: <?=$Endurance1_clr1?>"><?=$Endurance3?></td>
+            <td style=" background: <?=$Endurance1_clr1?>"><?=$Endurance3?></td>
             <td style="background:<?=$Power1_clr1?>"><?=$Power3?></td>
             <td style="background:<?=$Dexterity_clr1?>"><?=$Dexterity3?></td>
             <td><?=$all_3?></td>
