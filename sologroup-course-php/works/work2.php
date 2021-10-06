@@ -37,20 +37,15 @@ include $_SERVER['DOCUMENT_ROOT']."/works/other/day2.php";?>
 <!--    --><?php //endforeach; ?>
 
     <p><?
-
-        //функция подсчёта общего количества очков характеристики
         function All($a, $b, $c){
             return $a+$b+$c;
         }
-        //функция подсчёта среднего числа очков характеристики
         function Average($a, $b, $c){
             return All($a, $b, $c)/3;
         }
-        //функция подсчёта процента очков характеристики
         function Percent($a, $b, $c, $max=300){
             return (All($a, $b, $c)/300)*100;
         }
-        //функция определения цвета
         function Color($opt){
             if($opt<50) return 'red';
             elseif ($opt>=50 && $opt<80) return 'yellow';
