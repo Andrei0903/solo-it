@@ -12,12 +12,12 @@ include "other/day3.php"?>
 
         <?
         $Power_clr = Color($hero[$i]["Power"]);
-        $Endurance_clr = Color($hero[$i]["Power"]);
-        $Dexterity_clr = Color($hero[$i]["Power"]);
+        $Endurance_clr = Color($hero[$i]["Endurance"]);
+        $Dexterity_clr = Color($hero[$i]["Dexterity"]);
 
         $all_1 = All($hero[$i]["Dexterity"], $hero[$i]["Endurance"], $hero[$i]["Power"]);
         $average = Average($hero[$i]["Dexterity"], $hero[$i]["Endurance"], $hero[$i]["Power"]);
-        $persent = Percent($hero[$i]["Dexterity"], $hero[$i]["Endurance"], $hero[$i]["Power"]);
+        $persent = Percent($hero[$i]["Dexterity"], $hero[$i]["Dexterity"], $hero[$i]["Power"]);
         ?>
 
         <p><b>Имя:</b> <Span><?=$hero[$i]["Name"]?></Span></p>
