@@ -8,6 +8,8 @@ import { HeroesComponent } from './component/heroes/heroes.component';
 import { HeroDetailComponent } from './component/hero-detail/hero-detail.component';
 import { MessagesComponent } from './component/messages/messages.component';
 import { DashboardComponent } from './component/dashboard/dashboard.component';
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -20,6 +22,7 @@ import { DashboardComponent } from './component/dashboard/dashboard.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     FormsModule
   ],
   providers: [],
