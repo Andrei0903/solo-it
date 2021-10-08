@@ -1,1 +1,0 @@
-{"Name":"a","Essence":"b","Description":"Desc","Weapun":"Ksksks","Edurance":"76","Strength":"88","Agility":"99"}{"Name":"a","Essence":"b","Description":"Desc","Weapun":"Ksksks","Edurance":"76","Strength":"88","Agility":"99"}
